@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import HomePage from './HomePage';
 import UserListPage from './UserListPage';
+import NotFoundPage from './NotFoundPage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 export default function ExRouting() {
@@ -17,6 +18,7 @@ export default function ExRouting() {
                     path="/userlist"
                     element={<UserListPage userID={userID.current} />}
                 />
+                <Route path="*" element={<NotFoundPage />} />
             </Routes>
         </BrowserRouter>
     );
