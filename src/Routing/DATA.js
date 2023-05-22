@@ -39,4 +39,8 @@ export const DATA = [
         name: 'dom',
         addr: 'jeju',
     },
+    {
+        name: 'dom',
+        addr: 'jeju',
+    },
 ];
